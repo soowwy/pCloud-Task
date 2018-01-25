@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Jurassic Park</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="./assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="./assets/js/validate.js" type="text/javascript"></script>
+  <script src="./assets/js/toggle.js" type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="coma">
+          <img src="./assets/images/logo@2x.png"/>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="javascript:void(0)">menu1</a></li>
+          <li><a href="javascript:void(0)">menu2</a></li>
+          <li><a href="javascript:void(0)">menu3</a></li>
+          <li><a href="javascript:void(0)">menu4</a></li>
+        </ul>
+      </div>
+      <div class="ham" id="burger">
+        <img src="./assets/images/hamburger.png">
+      </div>
+    </nav>
+
+    <p class="toggle hideMe hidden">menu1</p>
+    <p class="toggle hideMe hidden">menu2</p>
+    <p class="toggle hideMe hidden">menu3</p>
+    <p class="toggle hideMe hidden">menu4</p>
+
+    <h1 class="white">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </h1>
+      <h2>
+        Ut tempor dignissim sem ac tempus
+      </h2>
+        <div class="dino">
+          <img src="./assets/images/dude-1@2x.png">
+        </div>
+
+        <div class="nav-btns">
+          <div class="parr-btns">
+            <button class="btn">My Button1</button>
+            <button class="btn">My Button2</button>
+          </div>
+        </div>
+  </header>
+
+  <main>
+    <section class="main content">
+      <h1 class="black">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </h1>
+      <div class="l-side">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor ultricies lectus, nec pharetra risus iaculis ac. Maecenas ac quam ac risus vestibulum sollicitudin. Praesent at ullamcorper metus. Sed in purus et odio finibus scelerisque sit amet eu ex. Suspendisse laoreet, sem quis placerat tincidunt, diam velit tincidunt turpis, in interdum urna quam et eros. Fusce vitae accumsan massa. Curabitur in ipsum venenatis, ultrices mi vel, hendrerit nulla.Duis ut massa vel nibh aliquam mattis eu vel lectus. Morbi consequat mollis lectus, ut luctus arcu lacinia congue. Nullam a arcu cursus, lacinia odio eu, luctus nisl. Morbi sagittis viverra diam, vel dictum est. Nulla varius dolor sed laoreet blandit.
+        </p>
+      </div>
+      <div class="r-side">
+        <img src="./assets/images/dude-2@2x.png">
+      </div>
+    </section>
+    <hr/>
+    <article class="main">
+      <form id="registration_form" action="" method="post">
+        <div class="name_mail">
+        <div class="frm f-left">
+            <span class="error_form" id="username_error_message"></span>
+            <label >Your name*</label>
+            <input id="form_username" type="text" placeholder="Enter your name here">
+        </div>
+        <div class="frm f-right">
+            <span class="error_form" id="email_error_message"></span>
+            <label >Your E-mail*</label>
+            <input id="form_email" type="text" placeholder="Enter your email here">
+        </div>
+        </div>
+        <span class="error_form" id="select_error_message"></span>
+        <label>Reason*</label>
+        <select id="form_select">
+          <option value="0">Please select an option</option>
+          <option value="1">Reason 1</option>
+          <option value="2">Reason 2</option>
+          <option value="3">Reason 3</option>
+          <option value="4">Reason 4</option>
+          <option value="5">Reason 5</option>
+        </select>
+        <span class="error_form" id="textarea_error_message"></span>
+        <label>Your Message*</label>
+        <textarea id="form_textarea" placeholder="Enter your message here" name="comments" maxlength="500"></textarea>
+        <div class="cntrd">
+        <input type="submit" value="Send Me"  class="btn hr">
+
+        <hr/>
+      </div>
+      </form>
+    </article>
+    
+  </main>
+  <footer>
+    <div class="main-f">
+      <p>2017&copy Lorem ipsum dolor sit amet</p>
+      <div class="social-media">
+        <img src="./assets/images/fb@2x.png">
+        <img src="./assets/images/tw@2x.png">
+        <img src="./assets/images/gp@2x.png">
+        <img src="./assets/images/in@2x.png">
+      </div>
+    </div>
+  </footer>
+  <div class="fixed" id="alert-on-submit">
+    Login successful! ^_^
+  </div>
+</body>
+</html>

@@ -75,17 +75,20 @@
         <div class="name_mail">
         <div class="frm f-left">
             <span class="error_form" id="username_error_message"></span>
-            <label >Your name*</label>
+            <label >Your name</label>
+            <div class="mark" ><img id="name_mark"></div>
             <input id="form_username" type="text" placeholder="Enter your name here">
         </div>
         <div class="frm f-right">
             <span class="error_form" id="email_error_message"></span>
-            <label >Your E-mail*</label>
+            <label >Your E-mail</label>
+            <div class="mark" ><img id="email_mark"></div>
             <input id="form_email" type="text" placeholder="Enter your email here">
         </div>
         </div>
         <span class="error_form" id="select_error_message"></span>
-        <label>Reason*</label>
+        <label>Reason</label>
+        <div class="mark" ><img id="select_mark"></div>
         <select id="form_select">
           <option value="0">Please select an option</option>
           <option value="1">Reason 1</option>
@@ -95,7 +98,8 @@
           <option value="5">Reason 5</option>
         </select>
         <span class="error_form" id="textarea_error_message"></span>
-        <label>Your Message*</label>
+        <label>Your Message</label>
+        <div class="mark" ><img id="textarea_mark"></div>
         <textarea id="form_textarea" placeholder="Enter your message here" name="comments" maxlength="500"></textarea>
         <div class="cntrd">
         <input type="submit" value="Send Me"  class="btn hr">
@@ -118,7 +122,7 @@
     </div>
   </footer>
   <div class="fixed" id="alert-on-submit">
-    Login successful! ^_^
+    Login successful! <img src="./assets/images/thumbs-up.png">
   </div>
 </body>
 </html>

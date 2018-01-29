@@ -67,30 +67,23 @@ ul li a:hover {
 
 .white {
     font-family: "Open Sans";
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-    line-height: 26.4px;
     margin: 0;
     text-align: center;
     color: white;
     opacity: 0.99;
     margin-top: 30px;
+    text-shadow: 0px 0 black, 0 0px silver, 1px 0 black, 0 0px black;
+    font-size: 24px;
 }
 
 h2 {
     font-family: "Open Sans";
 	font-size: 22px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-    line-height: 26.4px;
     margin: 0;
     text-align: center;
     color: white;
     opacity: 0.79;
-    text-shadow: 0px 0 black, 0 0px black, 1px 0 black, 0 0px black;
+    text-shadow: 0px 0 black, 0 0px silver, 1px 0 black, 0 0px black;
     margin-top: 30px;
     margin-bottom: 40px;
 }
@@ -187,10 +180,6 @@ header {
 .black {
     font-family: "Open Sans";
 	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-    line-height: 26.4px;
     margin: 0;
     text-align: center;
     color: black;
@@ -280,6 +269,12 @@ form input {
 .hr {
     margin: 20px 0;
 }
+
+.mark {
+    display: inline-block;
+    max-width: 20px;
+}
+
 /* END OF ARTICLE */
 
 /* FOOTER */
@@ -319,13 +314,17 @@ form input {
     width: 50%;
     margin: 0 0 0 -25%;
     left: 50%;
-    padding: 40px 0;
+    padding: 40px 7px;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     color: white;
     -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
+}
+
+.fixed img {
+    max-width: 50px;
 }
 
 
@@ -392,6 +391,14 @@ only screen and (min-device-pixel-ratio: 2) {
        max-width: 90%;
    }
 
+   .frm {
+    width: 48%;
+    }
+
+    .error_form {
+        display: none !important;
+    }
+
 }
 
 @media screen and (max-width: 460px) {
@@ -411,11 +418,41 @@ only screen and (min-device-pixel-ratio: 2) {
         display: block;
         text-align: center;
         margin-bottom: 10px;
+        font-size: 14px;
     }
     .social-media {
         float: none;
         display: block;
         text-align: center;
     }
+
+    .white , .black{
+        font-size: 20px;
+    }
+    .white {
+        padding: 0 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0 12px;
+    }
+
+    input[type=text], select, textarea {
+        font-size: 14px;
+        font-family: -webkit-body;
+        padding: 15px 5px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .fixed {
+        font-size: 20px;
+        padding: 16px 2px;
+    }
+   
 }
 

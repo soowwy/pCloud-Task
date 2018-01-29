@@ -32,9 +32,12 @@ $(function() {
             if(!username_regex.test(username_val) || username_length < 3 || username_length > 100) {
                 $("#username_error_message").html("3-100 characters and in letters only!");
                 $("#username_error_message").show();
+                $("#name_mark").attr("src", './assets/images/x-mark.png');
+                
             } else {
                 $("#username_error_message").hide();
                 flag_username = 1;
+                $("#name_mark").attr("src", './assets/images/tick_mark.png');
             }
 
     }
@@ -48,9 +51,11 @@ $(function() {
         if (!email_regex.test(email_val)) {
             $("#email_error_message").html("Please enter a valid email address!");
             $("#email_error_message").show();
+            $("#email_mark").attr("src", './assets/images/x-mark.png');
         } else {
             $("#email_error_message").hide();
             flag_email = 1;
+            $("#email_mark").attr("src", './assets/images/tick_mark.png');
         }
 
     }
@@ -62,9 +67,11 @@ $(function() {
         if(select_val === null || select_val === '' || select_val == '0') {
             $("#select_error_message").html("Please select one of the options below!");
             $("#select_error_message").show();
+            $("#select_mark").attr("src", './assets/images/x-mark.png');
         } else {
             $("#select_error_message").hide();
             flag_select = 1;
+            $("#select_mark").attr("src", './assets/images/tick_mark.png');
         }
     }
 
@@ -77,9 +84,11 @@ $(function() {
             if (textarea_regex.test(textarea_val) || textarea_length <= 10 || textarea_length > 500) {
                 $("#textarea_error_message").html("Text should not have blank characters and should be between 10-500 letters!");
                 $("#textarea_error_message").show();
+                $("#textarea_mark").attr("src", './assets/images/x-mark.png');
             } else {
                 $("#textarea_error_message").hide();
                 flag_textarea = 1;
+                $("#textarea_mark").attr("src", './assets/images/tick_mark.png');
             }
             
   
